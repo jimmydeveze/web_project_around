@@ -12,4 +12,4 @@ Creacion de una pagina de web tipo de red sociola donde es alrededor de los esta
 
 ---
 
-Pagina:
+Pagina: https://jimmydeveze.github.io/web_project_around/
