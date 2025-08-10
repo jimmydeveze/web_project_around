@@ -6,7 +6,7 @@
   background-color: transparent;
 }
 
-.popup__close_buttom {
+.popup__close {
   width: 40px;
   height: 40px;
 
@@ -24,7 +24,7 @@
   border: none;
 }
 
-.popup__close_buttom:hover {
+.popup__close:hover {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -38,7 +38,7 @@
     width: 282px;
   }
 
-  .popup__close_buttom {
+  .popup__close {
     left: 240px;
   }
 }

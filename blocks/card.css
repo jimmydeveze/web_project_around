@@ -38,7 +38,7 @@
   color: #000000;
 }
 
-.card__like_buttom {
+.card__like {
   margin: 0;
   width: 22px;
   height: 20px;
@@ -48,11 +48,11 @@
   border: 1px solid #ffffff;
 }
 
-.card__like_buttom:hover {
+.card__like:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.card__like_buttom:active {
+.card__like:active {
   background-image: url(../images/like_active.svg);
 }

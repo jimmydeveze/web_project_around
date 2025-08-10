@@ -23,8 +23,28 @@
     </header>
 
     <main class="content">
+      <section class="profile">
+        <div class="info">
+          <img
+            src="./images/Avatar.png"
+            alt="TripleTen Art Gallery"
+            class="info__avatar"
+          />
+          <div class="info__text">
+            <div class="info__row">
+              <h1 id="profile_name" class="info__name">Jacques Cousteau</h1>
+
+              <button id="open_edit_popup" class="info__edit"></button>
+            </div>
+            <p id="profile_about_me" class="info__description">Explorador</p>
+          </div>
+        </div>
+
+        <button class="profile__add"></button>
+      </section>
+
       <dialog id="edit__profile" class="popup">
-        <button id="close_edit_popup" class="popup__close_buttom"></button>
+        <button id="close_edit_popup" class="popup__close"></button>
 
         <form id="save_form" class="form">
           <fieldset class="form__fieldset">
@@ -50,26 +70,6 @@
         </form>
       </dialog>
 
-      <section class="profile">
-        <div class="info">
-          <img
-            src="./images/Avatar.png"
-            alt="TripleTen Art Gallery"
-            class="info__avatar"
-          />
-          <div class="info__text">
-            <div class="info__row">
-              <h1 id="profile_name" class="info__name">Jacques Cousteau</h1>
-
-              <button id="open_edit_popup" class="info__edit_buttom"></button>
-            </div>
-            <p id="profile_about_me" class="info__description">Explorador</p>
-          </div>
-        </div>
-
-        <button class="profile__add_buttom"></button>
-      </section>
-
       <section class="photogrid">
         <div class="card">
           <img
@@ -81,7 +81,7 @@
           <div class="card__title">
             <p class="card__text block">Valle de Yosemite</p>
 
-            <button class="card__like_buttom"></button>
+            <button class="card__like"></button>
           </div>
         </div>
 
@@ -95,7 +95,7 @@
           <div class="card__title">
             <p class="card__text block">Lago Louise</p>
 
-            <button class="card__like_buttom"></button>
+            <button class="card__like"></button>
           </div>
         </div>
 
@@ -109,7 +109,7 @@
           <div class="card__title">
             <p class="card__text block">Montañas Calvas</p>
 
-            <button class="card__like_buttom"></button>
+            <button class="card__like"></button>
           </div>
         </div>
 
@@ -119,7 +119,7 @@
           <div class="card__title">
             <p class="card__text block">Latemar</p>
 
-            <button class="card__like_buttom"></button>
+            <button class="card__like"></button>
           </div>
         </div>
 
@@ -133,7 +133,7 @@
           <div class="card__title">
             <p class="card__text block">Vanois National Park</p>
 
-            <button class="card__like_buttom"></button>
+            <button class="card__like"></button>
           </div>
         </div>
 
@@ -147,7 +147,7 @@
           <div class="card__title">
             <p class="card__text block">Lago di Braies</p>
 
-            <button class="card__like_buttom"></button>
+            <button class="card__like"></button>
           </div>
         </div>
       </section>
