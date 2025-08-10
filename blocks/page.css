@@ -1,0 +1,20 @@
+.page {
+  min-width: 320px;
+  max-width: 880px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Inder", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+
+  background-color: #000000;
+}
+
+@media screen and (max-width: 880px) {
+  .page {
+    padding: 0 25px;
+  }
+}

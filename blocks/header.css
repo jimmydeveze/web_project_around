@@ -1,0 +1,18 @@
+.header {
+  width: auto;
+  margin: inherit;
+}
+
+.header__logo {
+  margin: 45px 0 0;
+  width: 173px;
+  height: 33px;
+}
+
+.header__line {
+  margin: 41px 0 0;
+  width: auto;
+  height: 1px;
+  border: 1px;
+  background-color: #545454;
+}

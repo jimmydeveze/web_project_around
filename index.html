@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alrededor de los EE.UU." />
+    <meta name="keywords" content="HTML, CSS JavaScrip" />
+    <meta name="author" content="Jimmy Deveze" />
+
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <title>Alrededor de los EE.UU.</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <img
+        src="./images/logo.svg"
+        alt="Around the EE.UU"
+        class="header__logo"
+      />
+
+      <hr class="header__line" />
+    </header>
+
+    <main class="content">
+      <dialog id="edit__profile" class="popup">
+        <button id="close_edit_popup" class="popup__close_buttom"></button>
+
+        <form id="save_form" class="form">
+          <fieldset class="form__fieldset">
+            <h2 class="form__title">Editar Perfil</h2>
+            <input
+              id="popup_input_name"
+              class="form__input"
+              type="text"
+              placeholder="Nombre"
+            />
+
+            <input
+              id="popup_input_about"
+              class="form__input"
+              type="text"
+              placeholder="Acerca de mí"
+            />
+
+            <button id="saveButtom" class="form__button" type="submit">
+              Guardar
+            </button>
+          </fieldset>
+        </form>
+      </dialog>
+
+      <section class="profile">
+        <div class="info">
+          <img
+            src="./images/Avatar.png"
+            alt="TripleTen Art Gallery"
+            class="info__avatar"
+          />
+          <div class="info__text">
+            <div class="info__row">
+              <h1 id="profile_name" class="info__name">Jacques Cousteau</h1>
+
+              <button id="open_edit_popup" class="info__edit_buttom"></button>
+            </div>
+            <p id="profile_about_me" class="info__description">Explorador</p>
+          </div>
+        </div>
+
+        <button class="profile__add_buttom"></button>
+      </section>
+
+      <section class="photogrid">
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Yosemite.png"
+            alt="Valle de Yosemite"
+          />
+
+          <div class="card__title">
+            <p class="card__text block">Valle de Yosemite</p>
+
+            <button class="card__like_buttom"></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Louise.png"
+            alt="Lago Louise"
+          />
+
+          <div class="card__title">
+            <p class="card__text block">Lago Louise</p>
+
+            <button class="card__like_buttom"></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Calvas.png"
+            alt="Montañas Calvas"
+          />
+
+          <div class="card__title">
+            <p class="card__text block">Montañas Calvas</p>
+
+            <button class="card__like_buttom"></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card__image" src="./images/Latemar.png" alt="Latemar" />
+
+          <div class="card__title">
+            <p class="card__text block">Latemar</p>
+
+            <button class="card__like_buttom"></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Vanois.png"
+            alt="Vanois National Park"
+          />
+
+          <div class="card__title">
+            <p class="card__text block">Vanois National Park</p>
+
+            <button class="card__like_buttom"></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Braies.png"
+            alt="Lago di Braies"
+          />
+
+          <div class="card__title">
+            <p class="card__text block">Lago di Braies</p>
+
+            <button class="card__like_buttom"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2025. Around The U.S.</p>
+    </footer>
+
+    <script src="./scripts/popup_edit.js"></script>
+  </body>
+</html>
