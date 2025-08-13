@@ -1,6 +1,6 @@
 .header {
   width: auto;
-  margin: inherit;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -15,4 +15,19 @@
   height: 1px;
   border: 1px;
   background-color: #545454;
+}
+
+@media screen and (max-width: 880px) {
+  .header {
+    padding: 0 19px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__logo {
+    margin: 45px 0 0;
+    width: 126px;
+    height: 24px;
+  }
 }

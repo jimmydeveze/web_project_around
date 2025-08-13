@@ -1,5 +1,5 @@
 .photogrid {
-  width: 100%;
+  width: auto;
   margin: 50px auto 0;
 
   display: grid;

@@ -30,6 +30,13 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 880px) {
+  .profile {
+    padding: 0 19px;
+    box-sizing: border-box;
+  }
+}
+
 @media screen and (max-width: 634px) {
   .profile {
     justify-content: center;
