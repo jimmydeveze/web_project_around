@@ -70,86 +70,20 @@
         </form>
       </dialog>
 
-      <section class="photogrid">
-        <div class="card">
-          <img
-            class="card__image"
-            src="./images/Yosemite.png"
-            alt="Valle de Yosemite"
-          />
+      <section id="cards" class="photogrid">
+        <template id="card-template">
+          <div id="card" class="card">
+            <img id="image" class="card__image" src="" alt="" />
 
-          <div class="card__title">
-            <p class="card__text block">Valle de Yosemite</p>
+            <button id="delete-button" class="card__delete"></button>
 
-            <button class="card__like"></button>
+            <div class="card__title">
+              <p id="card-title" class="card__text block">Valle de Yosemite</p>
+
+              <button id="like-button" class="card__like"></button>
+            </div>
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card__image"
-            src="./images/Louise.png"
-            alt="Lago Louise"
-          />
-
-          <div class="card__title">
-            <p class="card__text block">Lago Louise</p>
-
-            <button class="card__like"></button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card__image"
-            src="./images/Calvas.png"
-            alt="Montañas Calvas"
-          />
-
-          <div class="card__title">
-            <p class="card__text block">Montañas Calvas</p>
-
-            <button class="card__like"></button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="card__image" src="./images/Latemar.png" alt="Latemar" />
-
-          <div class="card__title">
-            <p class="card__text block">Latemar</p>
-
-            <button class="card__like"></button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card__image"
-            src="./images/Vanois.png"
-            alt="Vanois National Park"
-          />
-
-          <div class="card__title">
-            <p class="card__text block">Vanois National Park</p>
-
-            <button class="card__like"></button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card__image"
-            src="./images/Braies.png"
-            alt="Lago di Braies"
-          />
-
-          <div class="card__title">
-            <p class="card__text block">Lago di Braies</p>
-
-            <button class="card__like"></button>
-          </div>
-        </div>
+        </template>
       </section>
     </main>
 
