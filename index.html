@@ -34,13 +34,13 @@
             <div class="info__row">
               <h1 id="profile_name" class="info__name">Jacques Cousteau</h1>
 
-              <button id="open_edit_popup" class="info__edit"></button>
+              <button id="open_edit_popup-button" class="info__edit"></button>
             </div>
             <p id="profile_about_me" class="info__description">Explorador</p>
           </div>
         </div>
 
-        <button class="profile__add"></button>
+        <button id="open_add_card-button" class="profile__add"></button>
       </section>
 
       <dialog id="edit__profile" class="popup">
@@ -85,6 +85,41 @@
           </div>
         </template>
       </section>
+
+      <dialog id="image-dialog" class="image-dialog">
+        <div id="image_content" class="image-dialog__content">
+          <button id="image_close" class="image-dialog__close"></button>
+          <img id="full_image" class="image-dialog__image" src="" alt="" />
+          <p id="image_caption" class="image-dialog__caption"></p>
+        </div>
+      </dialog>
+
+      <dialog id="add__place" class="popup">
+        <button id="close_add_popup" class="popup__close"></button>
+
+        <form id="add_place_form" class="form">
+          <fieldset class="form__fieldset">
+            <h2 class="form__title">Nuevo lugar</h2>
+            <input
+              id="popup_input_title"
+              class="form__input"
+              type="text"
+              placeholder="Titulo"
+            />
+
+            <input
+              id="popup_input_link"
+              class="form__input"
+              type="text"
+              placeholder="Enlace a la imagen"
+            />
+
+            <button id="createButton" class="form__button" type="submit">
+              Crear
+            </button>
+          </fieldset>
+        </form>
+      </dialog>
     </main>
 
     <footer class="footer">

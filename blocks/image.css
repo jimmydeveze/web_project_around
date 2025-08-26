@@ -1,0 +1,64 @@
+.image-dialog {
+  margin: auto;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  overflow: visible;
+}
+
+.image-dialog::backdrop {
+  background-color: #00000059;
+}
+
+.image-dialog__content {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.image-dialog__image {
+  display: block;
+  max-width: 75vw;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.image-dialog__caption {
+  margin: 10px 0 0 0;
+  max-width: 75vw;
+
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-align: left;
+
+  color: white;
+}
+
+.image-dialog__close {
+  width: 40px;
+  height: 40px;
+
+  opacity: 1;
+  border-radius: 2px;
+  border-width: 2px;
+
+  position: absolute;
+  top: -40px;
+  right: -40px;
+
+  background-color: transparent;
+  background-image: url(../images/Close_Buttom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.image-dialog__close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
