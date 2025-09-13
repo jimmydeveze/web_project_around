@@ -1,3 +1,5 @@
+import { enableValidation, resetValidation } from "./validate.js";
+
 const openEditPopupButton = document.getElementById("open_edit_popup-button");
 const openAddPopupButton = document.getElementById("open_add_card-button");
 
@@ -5,6 +7,15 @@ const profileName = document.getElementById("profile_name");
 const profileAboutMe = document.getElementById("profile_about_me");
 
 const cardsContainer = document.getElementById("cards");
+
+const validationConfig = {
+  formSelector: "form",
+  inputSelector: ".form__input",
+  submitButtonSelector: ".form__button",
+  inactiveButtonClass: "form__button_disabled",
+  inputErrorClass: "form__input_type_error",
+  errorClass: "form__error_visible",
+};
 
 let submitForm;
 let popupDialog;
@@ -22,6 +33,8 @@ function setElemntes(buttonId) {
 
     loadValues();
 
+    enableValidation(submitForm, validationConfig);
+
     submitForm.addEventListener("submit", handleProfileFormSubmit);
 
     console.log("espara el perfil");
@@ -32,12 +45,21 @@ function setElemntes(buttonId) {
     inputTitle = document.getElementById("popup_input_title");
     inputDescription = document.getElementById("popup_input_link");
 
+    enableValidation(submitForm, validationConfig);
+
     submitForm.addEventListener("submit", handleAddCardFormSubmit);
 
     console.log("es para agregar una carta mas");
   }
 
+  popupDialog.addEventListener("click", (e) => {
+    if (e.target === popupDialog) {
+      popupDialog.close();
+    }
+  });
+
   closePopupButton.onclick = function () {
+    resetValidation(submitForm, validationConfig);
     popupDialog.close();
   };
 }
@@ -156,6 +178,12 @@ function openImageDialog(imageSrc, imageAlt) {
 
 closeButton.addEventListener("click", () => {
   imageDialog.close();
+});
+
+imageDialog.addEventListener("click", (e) => {
+  if (e.target === imageDialog) {
+    imageDialog.close();
+  }
 });
 
 cardsContainer.addEventListener("click", (e) => {
